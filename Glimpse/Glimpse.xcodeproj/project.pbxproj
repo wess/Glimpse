@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08477B8D1700C75700873619 /* GlimpseAssetWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 08477B8C1700C75700873619 /* GlimpseAssetWriter.m */; };
+		08F243791700928300DFFB78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F243781700928300DFFB78 /* Foundation.framework */; };
+		08F2437E1700928300DFFB78 /* Glimpse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08F2437D1700928300DFFB78 /* Glimpse.h */; };
+		08F243801700928300DFFB78 /* Glimpse.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F2437F1700928300DFFB78 /* Glimpse.m */; };
+		08F243B4170092E100DFFB78 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F243AF170092E100DFFB78 /* AssetsLibrary.framework */; };
+		08F243B5170092E100DFFB78 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F243B0170092E100DFFB78 /* AVFoundation.framework */; };
+		08F243B6170092E100DFFB78 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F243B1170092E100DFFB78 /* CoreVideo.framework */; };
+		08F243B7170092E100DFFB78 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F243B2170092E100DFFB78 /* QuartzCore.framework */; };
+		08F243B8170092E100DFFB78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F243B3170092E100DFFB78 /* UIKit.framework */; };
+		08F243C0170094A300DFFB78 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F243BF170094A300DFFB78 /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		08F243731700928300DFFB78 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				08F2437E1700928300DFFB78 /* Glimpse.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08477B8B1700C75700873619 /* GlimpseAssetWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlimpseAssetWriter.h; sourceTree = "<group>"; };
+		08477B8C1700C75700873619 /* GlimpseAssetWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlimpseAssetWriter.m; sourceTree = "<group>"; };
+		08F243751700928300DFFB78 /* libGlimpse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGlimpse.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F243781700928300DFFB78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		08F2437C1700928300DFFB78 /* Glimpse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Glimpse-Prefix.pch"; sourceTree = "<group>"; };
+		08F2437D1700928300DFFB78 /* Glimpse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Glimpse.h; sourceTree = "<group>"; };
+		08F2437F1700928300DFFB78 /* Glimpse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Glimpse.m; sourceTree = "<group>"; };
+		08F243AF170092E100DFFB78 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		08F243B0170092E100DFFB78 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		08F243B1170092E100DFFB78 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		08F243B2170092E100DFFB78 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		08F243B3170092E100DFFB78 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		08F243BF170094A300DFFB78 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08F243721700928300DFFB78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F243C0170094A300DFFB78 /* MobileCoreServices.framework in Frameworks */,
+				08F243B4170092E100DFFB78 /* AssetsLibrary.framework in Frameworks */,
+				08F243B5170092E100DFFB78 /* AVFoundation.framework in Frameworks */,
+				08F243B6170092E100DFFB78 /* CoreVideo.framework in Frameworks */,
+				08F243B7170092E100DFFB78 /* QuartzCore.framework in Frameworks */,
+				08F243B8170092E100DFFB78 /* UIKit.framework in Frameworks */,
+				08F243791700928300DFFB78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08477B8A1700C74300873619 /* AssetWriter */ = {
+			isa = PBXGroup;
+			children = (
+				08477B8B1700C75700873619 /* GlimpseAssetWriter.h */,
+				08477B8C1700C75700873619 /* GlimpseAssetWriter.m */,
+			);
+			name = AssetWriter;
+			sourceTree = "<group>";
+		};
+		08F2436C1700928300DFFB78 = {
+			isa = PBXGroup;
+			children = (
+				08F2437A1700928300DFFB78 /* Glimpse */,
+				08F243771700928300DFFB78 /* Frameworks */,
+				08F243761700928300DFFB78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08F243761700928300DFFB78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08F243751700928300DFFB78 /* libGlimpse.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08F243771700928300DFFB78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08F243BF170094A300DFFB78 /* MobileCoreServices.framework */,
+				08F243AF170092E100DFFB78 /* AssetsLibrary.framework */,
+				08F243B0170092E100DFFB78 /* AVFoundation.framework */,
+				08F243B1170092E100DFFB78 /* CoreVideo.framework */,
+				08F243B2170092E100DFFB78 /* QuartzCore.framework */,
+				08F243B3170092E100DFFB78 /* UIKit.framework */,
+				08F243781700928300DFFB78 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08F2437A1700928300DFFB78 /* Glimpse */ = {
+			isa = PBXGroup;
+			children = (
+				08477B8A1700C74300873619 /* AssetWriter */,
+				08F2437D1700928300DFFB78 /* Glimpse.h */,
+				08F2437F1700928300DFFB78 /* Glimpse.m */,
+				08F2437B1700928300DFFB78 /* Supporting Files */,
+			);
+			path = Glimpse;
+			sourceTree = "<group>";
+		};
+		08F2437B1700928300DFFB78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08F2437C1700928300DFFB78 /* Glimpse-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08F243741700928300DFFB78 /* Glimpse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08F243831700928300DFFB78 /* Build configuration list for PBXNativeTarget "Glimpse" */;
+			buildPhases = (
+				08F243711700928300DFFB78 /* Sources */,
+				08F243721700928300DFFB78 /* Frameworks */,
+				08F243731700928300DFFB78 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Glimpse;
+			productName = Glimpse;
+			productReference = 08F243751700928300DFFB78 /* libGlimpse.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08F2436D1700928300DFFB78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Wess Cope";
+			};
+			buildConfigurationList = 08F243701700928300DFFB78 /* Build configuration list for PBXProject "Glimpse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08F2436C1700928300DFFB78;
+			productRefGroup = 08F243761700928300DFFB78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08F243741700928300DFFB78 /* Glimpse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08F243711700928300DFFB78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F243801700928300DFFB78 /* Glimpse.m in Sources */,
+				08477B8D1700C75700873619 /* GlimpseAssetWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		08F243811700928300DFFB78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		08F243821700928300DFFB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08F243841700928300DFFB78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Glimpse.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glimpse/Glimpse-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		08F243851700928300DFFB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Glimpse.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glimpse/Glimpse-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08F243701700928300DFFB78 /* Build configuration list for PBXProject "Glimpse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F243811700928300DFFB78 /* Debug */,
+				08F243821700928300DFFB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08F243831700928300DFFB78 /* Build configuration list for PBXNativeTarget "Glimpse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F243841700928300DFFB78 /* Debug */,
+				08F243851700928300DFFB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08F2436D1700928300DFFB78 /* Project object */;
+}
