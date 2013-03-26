@@ -1,0 +1,38 @@
+# Xcode
+build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+UserInterfaceState.xcuserstate
+!default.xcworkspace
+profile
+*.moved-aside
+
+.DS_Store
+Builds/*
+DTS*
+# OS X Finder
+# Xcode per-user config
+*.mode1
+*.perspective
+xcuserdata
+# Build products
+build/
+*.o
+*.LinkFileList
+*.hmap
+# Automatic backup files
+*~.nib/
+*.swp
+*~
+*.dat
+*.dep
+# Cocoapods
+Pods
+Podfile.lock
+.gitmodules
