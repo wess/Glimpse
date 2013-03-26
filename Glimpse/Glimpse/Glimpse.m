@@ -70,7 +70,7 @@
 - (UIImage *)imageFromView:(UIView *)view
 {
     UIGraphicsBeginImageContext(view.bounds.size);
-//    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+
     [[view.layer presentationLayer] renderInContext:UIGraphicsGetCurrentContext()];
 
     UIImage *rasterizedView = UIGraphicsGetImageFromCurrentImageContext();

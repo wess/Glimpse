@@ -132,24 +132,6 @@ static NSString *const GlimpseAssetWriterQueueName = @"com.Glimpse.asset.writer.
     [self.frameBuffer addObject:image];
 }
 
-//- (void)saveImagesToFile
-//{
-//    NSString *documentDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-//    NSTimeInterval timestamp    = [[NSDate date] timeIntervalSince1970];
-//
-//    int cnt = 0;
-//    for(UIImage *image in self.frameBuffer)
-//    {
-//        NSString *filename          = [NSString stringWithFormat:@"%d__%d.png", (int)timestamp, cnt];
-//        NSString *path              = [NSString stringWithFormat:@"%@/%@", documentDirectory, filename];
-//
-//        NSData *imageData = UIImagePNGRepresentation(image);
-//        [imageData writeToFile:path atomically:YES];
-//        
-//        cnt++;
-//    }
-//}
-
 - (void)writeVideoFromImageFrames:(void(^)(NSURL *outputPath))callback
 {
     [self.writer startWriting];
