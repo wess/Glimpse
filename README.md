@@ -12,7 +12,7 @@ Glimpse only uses 2 methods that start and stop recording your view.
 
 @implementation myViewController
 - (void)viewDidAppear
-- {
+{
 	    [super viewDidAppear:animated];
     
     	// Create a new Glimpse object.
