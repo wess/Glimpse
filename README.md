@@ -19,7 +19,7 @@ Glimpse only uses 2 methods that start and stop recording your view.
 	    Glimpse *glimpse = [[Glimpse alloc] init];
 	    
 	    // Start recording and tell Glimpse what to do when you are finished
-    	[glimpse startRecordingView:self.view withCompletion:^(NSURL *fileOuputURL) {
+    	[glimpse startRecordingView:self.view onCompletion:^(NSURL *fileOuputURL) {
         	NSLog(@"DONE WITH OUTPUT: %@", fileOuputURL.absoluteString);
 	    }];
 

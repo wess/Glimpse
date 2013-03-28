@@ -37,10 +37,10 @@
 
 - (void)startRecordingView:(UIView *)view withCallback:(GlimpseCompletedCallback)callback
 {
-    [self startRecordingView:view withCompletion:callback];
+    [self startRecordingView:view onCompletion:callback];
 }
 
-- (void)startRecordingView:(UIView *)view withCompletion:(GlimpseCompletedCallback)block
+- (void)startRecordingView:(UIView *)view onCompletion:(GlimpseCompletedCallback)block
 {
     self.sourceView = view;
     self.callback   = block;

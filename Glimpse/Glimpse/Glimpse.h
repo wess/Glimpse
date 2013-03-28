@@ -31,7 +31,7 @@ typedef void(^GlimpseCompletedCallback)(NSURL *fileOuputURL);
  @param block Block that is called when recording has been stopped.
  
  **/
-- (void)startRecordingView:(UIView *)view withCompletion:(GlimpseCompletedCallback)block;
+- (void)startRecordingView:(UIView *)view onCompletion:(GlimpseCompletedCallback)block;
 
 /**
  Just an alias.
