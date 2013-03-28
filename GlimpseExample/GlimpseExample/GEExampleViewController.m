@@ -37,7 +37,7 @@
 {
     [super viewDidAppear:animated];
     
-    [self.glimpse startRecordingView:self.view withCallback:^(NSURL *fileOuputURL) {
+    [self.glimpse startRecordingView:self.view withCompletion:^(NSURL *fileOuputURL) {
         NSLog(@"DONE WITH OUTPUT: %@", fileOuputURL.absoluteString);
     }];
 

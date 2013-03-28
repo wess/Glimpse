@@ -37,8 +37,13 @@
 
 - (void)startRecordingView:(UIView *)view withCallback:(GlimpseCompletedCallback)callback
 {
+    [self startRecordingView:view withCompletion:callback];
+}
+
+- (void)startRecordingView:(UIView *)view withCompletion:(GlimpseCompletedCallback)block
+{
     self.sourceView = view;
-    self.callback   = callback;
+    self.callback   = block;
 
     self.writer.startDate = [NSDate date];
     
