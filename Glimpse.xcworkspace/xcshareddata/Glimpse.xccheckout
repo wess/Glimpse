@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D79C2A4E-EDAF-4F3A-A21D-FC1293ABBB3A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Glimpse</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DDBD9C62-976A-43A1-B63A-24535D63730B</key>
+		<string>ssh://github.com/wess/Glimpse.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Glimpse.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DDBD9C62-976A-43A1-B63A-24535D63730B</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/wess/Glimpse.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DDBD9C62-976A-43A1-B63A-24535D63730B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DDBD9C62-976A-43A1-B63A-24535D63730B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Glimpse</string>
+		</dict>
+	</array>
+</dict>
+</plist>
