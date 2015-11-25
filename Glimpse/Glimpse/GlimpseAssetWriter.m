@@ -156,7 +156,6 @@ static NSString *const GlimpseAssetWriterQueueName = @"com.Glimpse.asset.writer.
             if(self.input.readyForMoreMediaData)
             {
                 i++;
-                NSLog(@"i = %d, idx = %lu",i,(unsigned long)idx);
                 CMTime present          = CMTimeMake(i , _frameRate);
                 
                 buffer = [self pixelBufferForImage:image];
