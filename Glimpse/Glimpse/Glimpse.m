@@ -44,6 +44,7 @@
 {
     self.sourceView = view;
     self.callback   = block;
+    self.writer.size = view.bounds.size;
 
     self.writer.startDate = [NSDate date];
     
