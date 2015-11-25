@@ -13,7 +13,7 @@
 {
     CFAbsoluteTime      _timeOfFirstFrame;
     CFTimeInterval      _timestamp;
-    uint64_t            _frameRate;
+    int32_t            _frameRate;
     uint64_t            _frameCount;
     dispatch_queue_t    _queue;
     
@@ -40,26 +40,26 @@ static NSString *const GlimpseAssetWriterQueueName = @"com.Glimpse.asset.writer.
     if (self)
     {
         self.size               = [[UIScreen mainScreen] bounds].size;
-        self.framesPerSecond    = 1;
+        self.framesPerSecond    = 24;
         self.frameBuffer        = [[NSMutableArray alloc] init];
         
-        _frameRate  = (uint64_t)self.framesPerSecond;
+        _frameRate  = (int32_t)self.framesPerSecond;
         _queue      = dispatch_queue_create([GlimpseAssetWriterQueueName cStringUsingEncoding:NSUTF8StringEncoding], 0);
     }
     return self;
 }
 
-- (NSURL *)fileOutputURL
+- (NSURL *)createFileOutputURL
 {
     NSString *documentDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSTimeInterval timestamp    = [[NSDate date] timeIntervalSince1970];
     NSString *filename          = [NSString stringWithFormat:@"glimpse_%08x.mov", (int)timestamp];
     NSString *path              = [NSString stringWithFormat:@"%@/%@", documentDirectory, filename];
     NSFileManager *fileManager  = [NSFileManager defaultManager];
-
+    
     if([fileManager fileExistsAtPath:path])
         [fileManager removeItemAtPath:path error:nil];
-
+    
     NSLog(@"OUTPUT: %@", path);
     return [NSURL fileURLWithPath:path];
 }
@@ -68,6 +68,8 @@ static NSString *const GlimpseAssetWriterQueueName = @"com.Glimpse.asset.writer.
 {
     if(_writer)
         return _writer;
+    
+    _fileOutputURL = [self createFileOutputURL];
     
     NSError *error = nil;
     _writer = [[AVAssetWriter alloc] initWithURL:self.fileOutputURL fileType:AVFileTypeQuickTimeMovie error:&error];
@@ -154,10 +156,8 @@ static NSString *const GlimpseAssetWriterQueueName = @"com.Glimpse.asset.writer.
             if(self.input.readyForMoreMediaData)
             {
                 i++;
-                
-                CFAbsoluteTime current  = CFAbsoluteTimeGetCurrent();
-                CFTimeInterval elapse   = current - _timeOfFirstFrame;
-                CMTime present          = CMTimeMake(elapse * 600, 600);
+                NSLog(@"i = %d, idx = %lu",i,(unsigned long)idx);
+                CMTime present          = CMTimeMake(i , _frameRate);
                 
                 buffer = [self pixelBufferForImage:image];
                 BOOL result = [self.adapter appendPixelBuffer:buffer withPresentationTime:present];
