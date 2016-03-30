@@ -44,6 +44,7 @@
 {
     self.sourceView = view;
     self.callback   = block;
+    self.writer.size = view.bounds.size;
 
     self.writer.startDate = [NSDate date];
     
@@ -74,10 +75,13 @@
 
 - (UIImage *)imageFromView:(UIView *)view
 {
-    UIGraphicsBeginImageContext(view.bounds.size);
-
-    [[view.layer presentationLayer] renderInContext:UIGraphicsGetCurrentContext()];
-
+    UIGraphicsBeginImageContextWithOptions(view.frame.size , YES , 0 );
+    
+    if ([view respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)]) {
+        [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:YES];
+    } else {
+        [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    }
     UIImage *rasterizedView = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
