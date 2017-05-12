@@ -114,7 +114,7 @@ static NSString *const GlimpseAssetWriterQueueName = @"com.Glimpse.asset.writer.
     
     void *data                  = CVPixelBufferGetBaseAddress(buffer);
     CGColorSpaceRef colorSpace  = CGColorSpaceCreateDeviceRGB();
-    CGContextRef context        = CGBitmapContextCreate(data, CGImageGetWidth(cgImage), CGImageGetHeight(cgImage), 8, 4 * CGImageGetWidth(cgImage), colorSpace, (kCGBitmapAlphaInfoMask & kCGImageAlphaNoneSkipFirst));
+    CGContextRef context        = CGBitmapContextCreate(data, CGImageGetWidth(cgImage), CGImageGetHeight(cgImage), 8, CVPixelBufferGetBytesPerRow(buffer), colorSpace, (kCGBitmapAlphaInfoMask & kCGImageAlphaNoneSkipFirst));
     CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, CGImageGetWidth(cgImage), CGImageGetHeight(cgImage)), cgImage);
     
     CGColorSpaceRelease(colorSpace);
